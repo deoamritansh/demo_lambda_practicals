@@ -1,0 +1,17 @@
+handler: lambda_handler.main
+module: demo/demo_lambda/src
+name: demo_lambda-${self:provider.stage}
+description: This is test lambda
+role: "test_role"
+timeout: 900
+memorySize: 512
+package:
+  include:
+    - "!./**"
+    - ./demo/demo_lambda/src/**
+  exclude:
+    - '**'
+runtime: python3.8
+environment:
+  LOG_LEVEL: ${env:LOG_LEVEL}
+  ENDPOINT_URL: "URL"

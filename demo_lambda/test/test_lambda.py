@@ -38,28 +38,4 @@ if __name__ == '__main__':
 
 
 
-# event = {'Address': 'Gurgaon'}
-# with patch.object(demo_lambda, 'create_dynamoDB', return_value='Success'):
-#     expected = 'Success'
-#     response = lambda_handler(event)
-#     self.assertEqual(response, expected)
 
-# event = {'Address': 'Gurgaon'}
-#         with patch(demo_lambda,'create_dynamoDB') as some_func:
-#             some_func.return_value = 'Success'
-#             #expected = 'Success'
-#             response = lambda_handler(event)
-#             self.assertEqual(response, some_func.return_value)
-
-# def test_lambda_handler_successful(mocker):
-#     event = {'Address': 'Gurgaon'}
-#     mocker.patch('demo_lambda.src.demo_lambda.create_dynamoDB', return_value='Success')
-#     response = lambda_handler(event)
-#     assert response == 'Success'
-#
-#
-# def test_lambda_handler_unsuccessful(mocker):
-#     event = {'Address': ' '}
-#     mocker.patch('demo_lambda.src.demo_lambda.create_dynamoDB', return_value='Fail')
-#     response = lambda_handler(event)
-#     assert response != 'Success'

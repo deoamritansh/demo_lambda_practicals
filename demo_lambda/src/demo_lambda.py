@@ -5,7 +5,7 @@ print('Loading function')
 
 
 def lambda_handler(event):
-    print('Calling LAmbda handler')
+
     logging.info('Lambda Handler Triggered')
     if event is not None:
         address_name = event['Address']
